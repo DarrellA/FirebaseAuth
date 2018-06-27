@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "209404261400",
+    "firebase_url": "https://goldfinger-124de.firebaseio.com",
+    "project_id": "goldfinger-124de",
+    "storage_bucket": "goldfinger-124de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209404261400:android:e327d65044e8852b",
+        "android_client_info": {
+          "package_name": "net.aucutt.goldfinger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209404261400-6c9q3af6o4vohbt7bodem38ffb6t2pan.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.aucutt.goldfinger",
+            "certificate_hash": "4340a804b22980b5c40409c5b8c55ccaa7b63d6b"
+          }
+        },
+        {
+          "client_id": "209404261400-e54n9tamq0vdib43ihkdosc4lpcre43s.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "209404261400-ku7iqr0kq82ri0ukbir3vu0eqvk8g1jb.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "209404261400-ku7iqr0kq82ri0ukbir3vu0eqvk8g1jb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC539xPs5GmrF6HjcU3Z95FvB9gS45fhcQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209404261400-e54n9tamq0vdib43ihkdosc4lpcre43s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
