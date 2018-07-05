@@ -325,7 +325,17 @@ public class SignInActivity extends AppCompatActivity implements
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
-                            Toast.makeText(getApplicationContext(), "Authentication failed.", Toast.LENGTH_SHORT).show();
+                            if ( task.getException() instanceof  FirebaseAuthUserCollisionException) {
+                                FirebaseUser user = mFirebaseAuth.getCurrentUser();
+                                if( user != null ){
+                                    Toast.makeText(getApplicationContext(), user.getEmail() + " is in use! ", Toast.LENGTH_LONG).show();
+                                } else {
+                                    Toast.makeText(getApplicationContext(), "Address is in use.", Toast.LENGTH_SHORT).show();
+                                }
+
+                            } else {
+                                Toast.makeText(getApplicationContext(), "Authentication failed.", Toast.LENGTH_SHORT).show();
+                            }
                             //updateUI(null);
                         }
 
