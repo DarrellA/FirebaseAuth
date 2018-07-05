@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Firebase</string>
-    <string name="sign_in">Sign In</string>
+    <string name="sign_in">Le Sign In Options : </string>
+    <string name="sign_out">Sign out </string>
+    <string name="phoneOption">Through SMS </string>
+    <string name="facebook_app_id">485916405108601</string>
+    <string name="fb_login_protocol_scheme">fb485916405108601</string>
+
 </resources>
