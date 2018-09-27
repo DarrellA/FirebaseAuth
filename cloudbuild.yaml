@@ -11,16 +11,16 @@ steps:
   args: ['clone', 'https://github.com/DarrellA/FirebaseAuth.git']
   dir: 'examples/version-file'
 # The Dockerfile here uses this git builder as its base image.
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '--tag=version_file', '.']
-  dir: 'examples/version-file'
-- name: 'version_file'
-  args: ['VERSION']
-  dir: 'examples/version-file/cloud-builders'
+#- name: 'gcr.io/cloud-builders/docker'
+#  args: ['build', '--tag=version_file', '.']
+#  dir: 'examples/version-file'
+#- name: 'version_file'
+#  args: ['VERSION']
+#  dir: 'examples/version-file/cloud-builders'
 # Prove that the file exists.
-- name: 'alpine'
-  args: ['ash', '-c', 'echo "Version: $(cat VERSION)"']
-  dir: 'examples/version-file/cloud-builders'
+#- name: 'alpine'
+#  args: ['ash', '-c', 'echo "Version: $(cat VERSION)"']
+#  dir: 'examples/version-file/cloud-builders'
 
 #entrypoint: 'gradle-build'
 # args: ['-g', '.gradle', 'assemble']
