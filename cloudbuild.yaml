@@ -22,6 +22,6 @@ steps:
   args: ['ash', '-c', 'echo "Version: $(cat VERSION)"']
   dir: 'examples/version-file/cloud-builders'
 
-entrypoint: 'gradle-build'
- args: ['-g', '.gradle', 'assemble']
-  -name: gcr.io/cloud-builders/gsutil
+#entrypoint: 'gradle-build'
+# args: ['-g', '.gradle', 'assemble']
+ # -name: gcr.io/cloud-builders/gsutil
